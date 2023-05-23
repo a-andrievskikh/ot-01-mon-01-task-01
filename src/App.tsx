@@ -6,12 +6,12 @@ import { Tasks } from './Tasks'
 // -Don't forget to assign types to our data.
 
 export type DataType = {
-  title: string
-  tasks: TasksType[]
-  students: Array<string>
+  title: string // тип строка
+  tasks: TaskType[] // это массив с объектами
+  students: string[] // массив со строками
 }
 
-export type TasksType = {
+export type TaskType = {
   taskId: number
   title: string
   isDone: boolean
